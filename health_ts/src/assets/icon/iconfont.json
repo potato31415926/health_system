@@ -1,0 +1,65 @@
+{
+  "id": "3976812",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22010850",
+      "name": "返回上级",
+      "font_class": "fanhuishangji",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "4770754",
+      "name": "增加",
+      "font_class": "zengjia",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "10340477",
+      "name": "排班打卡",
+      "font_class": "paibandaka",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "19614462",
+      "name": "健康码",
+      "font_class": "jiankangma",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "3278355",
+      "name": "导入",
+      "font_class": "daoru",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "9783460",
+      "name": "概览",
+      "font_class": "gailan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "10717641",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "20406854",
+      "name": "我的信息_基本信息",
+      "font_class": "wodexinxi_jibenxinxi",
+      "unicode": "e796",
+      "unicode_decimal": 59286
+    }
+  ]
+}

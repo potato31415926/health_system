@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-dialog width="400" v-model="dialogFormVisible" title="新增用户">
+    <el-dialog width="400" v-model="dialogFormVisible" title="修改">
       <el-form :model="form" :rules="rules" ref="formRef">
         <el-form-item label="身份证" label-width="100">
           <el-input v-model="form.person_id" disabled />
@@ -12,36 +12,18 @@
           <el-input v-model="form.user_name" disabled />
         </el-form-item>
         <el-form-item label="学院" label-width="100">
-          <el-select
-            v-model="form.department"
-            placeholder="未选择"
-            @change="Init(0, form.department)">
-            <el-option
-              v-for="item in departments"
-              :key="item.id"
-              :label="item.value"
-              :value="item.value" />
+          <el-select v-model="form.department" placeholder="未选择" @change="Init(0, form.department)">
+            <el-option v-for="item in departments" :key="item.id" :label="item.value" :value="item.value" />
           </el-select>
         </el-form-item>
         <el-form-item label="专业" label-width="100" v-if="isVisible">
-          <el-select
-            v-model="form.major"
-            placeholder="未选择"
-            @change="Init(1, form.major)">
-            <el-option
-              v-for="item in majors"
-              :key="item.id"
-              :label="item.value"
-              :value="item.value" />
+          <el-select v-model="form.major" placeholder="未选择" @change="Init(1, form.major)">
+            <el-option v-for="item in majors" :key="item.id" :label="item.value" :value="item.value" />
           </el-select>
         </el-form-item>
         <el-form-item label="班级" label-width="100" v-if="isVisible">
           <el-select v-model="form.classes" placeholder="未选择">
-            <el-option
-              v-for="item in classes"
-              :key="item.id"
-              :label="item.value"
-              :value="item.value" />
+            <el-option v-for="item in classes" :key="item.id" :label="item.value" :value="item.value" />
           </el-select>
         </el-form-item>
         <el-form-item label="健康码颜色" label-width="100">
